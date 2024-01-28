@@ -11,4 +11,4 @@
 - JavaScript.
 
 ### პროექტის გაშვების ინსტრუქცია
-პროექტის გასაშვებად გადადი ლინკზე: https://raw.githack.com/sw10pa/TBCxUSAID/main/index.html
+პროექტის გასაშვებად გადადით ლინკზე: https://raw.githack.com/sw10pa/TBCxUSAID/main/index.html
