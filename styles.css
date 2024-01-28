@@ -1,0 +1,394 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header_container {
+    background-color: #1A1E1F;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    opacity: 95%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 17.5%;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-link svg {
+    height: 41px;
+    width: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+#selected {
+    color: #00A3E0;
+}
+
+.nav-link:hover {
+    color: #00A3E0;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    background-image: url('https://static.wixstatic.com/media/93e8a3_9fa23196ddf6427a9da574e2b31a13d2~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 352px;
+}
+
+.section1-text {
+    color: #f4f4f4;
+    padding: 0 17.5%;
+}
+
+.section1-title {
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section1-subtitle {
+    font-size: 34px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.section2 {
+    background-color: #2b2b2b;
+    text-align: left;
+    padding: 56px 17.5%;
+}
+
+.section2 p {
+    font-size: 28px;
+    line-height: 1.6em;
+    font-family: sans-serif;
+    color: #f4f4f4;
+    margin: 0 0 43px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 0px;
+    color: #00aef3;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: #AAAAAA;
+}
+
+.section3 {
+    padding: 0 17.5%;
+    padding-bottom: 58px;
+    text-align: left;
+    background-color: #161616;
+}
+
+.section3-title {
+    color: #DBDBDB;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: normal;
+    padding-top: 34px;
+    padding-bottom: 67px;
+    margin: 0;
+}
+
+.course-item {
+    display: inline-block;
+    background-color: #161616;
+    color: #F4F4F4;
+    border-radius: 10px;
+    width: 300px;
+    height: 414px;
+    border-color: #888888;
+    border-style: solid;
+    border-width: 0.5px;
+    margin-bottom: 25px;
+    margin-right: 23px;
+}
+
+.course-image {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 34px;
+}
+
+.course-info {
+    padding: 0 22px;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    height: 40px;
+}
+
+.course-description {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.course-link {
+    display: inline-block;
+    margin-top: 100px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: #00aef3;
+}
+
+.course-link:hover {
+    color: #0098d4;
+}
+
+.section4 {
+    padding: 0 17.5%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.section4-header {
+    color: #DBDBDB;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: normal;
+    padding-top: 34px;
+    padding-bottom: 67px;
+    margin: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    user-select: none;
+    border: none;
+    background: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    color: #777;
+}
+
+.slide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.slide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 227px;
+    height: 64px;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.section5 {
+    background-color: #161616;
+    font-family: sans-serif;
+    padding: 64px 17.5%;
+}
+
+.section5-title {
+    color: #f4f4f4;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: normal;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.faq-container {
+    font-size: 1.2em;
+}
+
+.faq-question {
+    margin: 25px 0;
+    padding: 0px;
+    font-size: 20px;
+    color: #f4f4f4;
+    background-color: #161616;
+    margin-bottom: 5px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-answer {
+    padding: 10px 0px;
+    width: 100%;
+    color: #f4f4f4;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer-content {
+    padding: 15px 0;
+    border-top: 1px solid #333;
+}
+
+.faq-question.active+.faq-answer {
+    max-height: 300px;
+}
+
+.footer-wrapper {
+    background-color: #263031;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+}
+
+.footer-logo {
+    padding: 0;
+    padding-left: 17.5%;
+}
+
+.footer-logo img {
+    width: 106px;
+    height: auto;
+}
+
+.footer-center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 39px;
+    height: 39px;
+}
+
+.footer-text {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.footer-button {
+    background-color: #00AEF3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-right: 17.5%;
+    height: 39px;
+    width: 162px;
+}
+
+.footer-button:hover {
+    background-color: #0056b3;
+}
